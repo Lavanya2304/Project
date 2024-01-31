@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="edge test(failed)">
+    <parameter name="browser" value="edge"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
+    <classes>
+      <class name="empdetails.com.NewTest">
+        <methods>
+          <include name="fill"/>
+          <include name="save"/>
+          <include name="setup"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="tab"/>
+          <include name="editdetails"/>
+          <include name="tabswitch"/>
+        </methods>
+      </class> <!-- empdetails.com.NewTest -->
+    </classes>
+  </test> <!-- edge test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
